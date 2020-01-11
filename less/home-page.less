@@ -1,8 +1,12 @@
 // Home Content
-
 .home {
+  width: 80%;
 
   .intro {
+    img{
+      width: 100%;
+      border-radius: 15px;
+    }
 
     h2 {
       padding: 15px;
@@ -37,6 +41,14 @@
     p {
       margin-top: 13px;
     }
+    
+@media (max-width: 500px){
+  .space-images{    
+  display: flex;
+  flex-direction: column;
+  padding: 20%;
+  border: 1px solid red;
+    }
   }
 
   .walk {
@@ -58,7 +70,12 @@
       }
 
       .btn {
+        .button(@btn-bg-color,white);
       }
+
+      .btn:hover{
+          .button(white,@btn-bg-color);
+        }
     }
 
     .walk-img {
@@ -72,4 +89,4 @@
       }
     }
   }
-}// home
+  }

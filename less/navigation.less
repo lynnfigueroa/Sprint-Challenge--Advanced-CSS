@@ -1,1 +1,31 @@
 // Navigation code here
+.container{
+    width: 100%;
+  }
+  
+  .topNav{
+    background-color: @wild-sand;
+    .displayFlex(column,center);
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+    padding-top: 1.5%;
+
+    @media @phone{
+      width: 80%;
+    }
+       
+    h1{
+      font-size: 4rem;
+    }
+  
+    nav {
+      .displayFlex(row,space-around);
+      width: 70%;
+      padding: 3% 0;
+    }
+      
+      a{
+        .navStyle;
+    }
+  }

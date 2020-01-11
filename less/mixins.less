@@ -1,1 +1,22 @@
 // Mixins Here
+.displayFlex (@direction,@justify){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+}
+
+.navStyle{
+    text-decoration: none;
+    color: @river-bend;
+    font-size: 1.6rem;
+}
+
+.button(@btnColor,@textColor){
+    background-color: @btnColor;
+    color: @textColor;
+    font-size: 2rem;
+    border-radius: 10px;
+    width: 40%;
+    padding: 3% 0;
+    text-align: center;
+}
